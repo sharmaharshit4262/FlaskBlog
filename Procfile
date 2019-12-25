@@ -1,1 +1,1 @@
-web: python deploy:run
+web: python run:app
