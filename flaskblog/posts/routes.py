@@ -18,13 +18,13 @@ def new_post():
         flash('You have sucessfully created a post!', 'success')
         return redirect(url_for('main.index'))
 
-    return render_template('newpost.html', title='New Post', form=form, legend='New post')
+    return render_template('Posts/newpost.html', title='New Post', form=form, legend='New post')
 
 
 @posts.route("/posts/<int:post_id>")
 def post(post_id):
     post = Post.query.get_or_404(post_id)
-    return render_template('post.html', title=post.title, post=post)
+    return render_template('Posts/post.html', title=post.title, post=post)
 
 
 @posts.route("/posts/<int:post_id>/update", methods=['GET', 'POST'])
@@ -43,7 +43,7 @@ def update_post(post_id):
     elif request.method == 'GET':
         form.title.data = post.title
         form.content.data = post.content
-    return render_template('newpost.html', title="Update post", legend="Update Post", form=form)
+    return render_template('Posts/newpost.html', title="Update post", legend="Update Post", form=form)
 
 
 @posts.route("/posts/<int:post_id>/delete", methods=['POST'])

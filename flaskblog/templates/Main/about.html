@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block head %}
+{% endblock %}
+
+{%block body%}
+    <div class="content-section">
+        <div class="article-title ">
+            <h2>About Flask Blog</h2>
+        </div>
+        <div>
+             <p>Hello everyone!! This is a small blogging website where you can create posts. All you have to do is
+                to create an account and log in. Don't worry if there are some typos in your post, you can always update
+                or delete them later. You could also view posts written by others. This website also
+                offers you an option to change your profile photo as per your personal preferences.
+                If you forgot you password, we'll send an email to your registered Email-ID with a link to reset your
+                password. Still reading this section? Go ahead and register to experience all of the above features
+                in action!!<br>
+                PS. More features to be addded soon. You could send some suggestions to my <a href="https://www.linkedin.com/in/harshit-sharma-91a83a124/">LinkedIn</a> Profile.<br>
+                Also, one last thing, since I have deployed this project on Heroku for free, any data created is lost in an hour, since it follows a <a href="https://devcenter.heroku.com/articles/dynos#ephemeral-filesystem">Ephemeral</a> filesystem<br>
+                Check out more info about the creator of this website below!</p>
+                </p>
+        </div>
+        </div>
+        <div class="text-muted">About <a href="{{ url_for('main.harshit') }}">Harshit Sharma</a></div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    <article class="media content-section">
+      <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/creator.png') }}">
+      <div class="media-body">
+        <h2 class="article-title">Harshit Sharma</h2>
+        <p class="article-content">An individual who loves learning and developing applications, for example, Flask-Blog. I also have a soft spot for Gaming.<br>
+        Before developing this website, I had limited knowledge about Flask, Bootstrap and Heroku. Building this application has been an incredible journey towards learning, and I would like to thank <a href="https://www.youtube.com/channel/UCCezIgC97PvUuR4_gbFUs5g">Corey Schaufer</a> for putting out incredible content on youtube, to make python so easy for beginners. I would also like to thank the community on <a href="https://stackoverflow.com/">Stackoverflow</a> and <a href="https://github.community/">Github</a>, because, you know why.<br>
+        I will be adding more features to this website and creating more applications like this in the future, so stay Tuned!<br>
+         Check out my <a href="https://www.linkedin.com/in/harshit-sharma-91a83a124/">LinkedIn</a> profile!</p>
+
+
+      </div>
+    </article>
+{% endblock %}
